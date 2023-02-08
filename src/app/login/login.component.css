@@ -1,0 +1,12 @@
+.loginCard{
+    width: 400px;
+    height: 300px;
+    margin-top: 20vh;
+    margin-left: 80vh;
+}
+.loginCard mat-card-header {
+    margin-bottom: 10px;
+}
+.loginCard mat-card-header div.mat-card-avatar mat-icon {
+    font-size: 48px;
+}
