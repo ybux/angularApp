@@ -16,10 +16,11 @@ export class LoginComponent implements OnInit{
   public constructor(){}
 
   ngOnInit(): void {
-    
+
   }
+
   public validateLogin(){
-    
+
     console.log(this.form.value);
   }
 }
