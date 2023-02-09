@@ -1,27 +1,28 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
-  </mat-form-field>
+<mat-card class="loginCard">
+    <mat-card-header>
+        <div mat-card-avatar >
+            <mat-icon aria-hidden="false" fontIcon="face"></mat-icon>
+        </div>
+        <mat-card-title>Login</mat-card-title>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field>
-</form>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="validateLogin()">
+            <mat-form-field class="full">
+              <mat-label>Usuario</mat-label>
+              <input matInput type="text" formControlName="user">
+            </mat-form-field>
+            <mat-form-field class="full">
+                <mat-label>Clave</mat-label>
+                <input matInput type="password" formControlName="pass">
+            </mat-form-field>
+            <p>
+                <button mat-raised-button class="full" >Ingresar</button>
+            </p>
+            <p class="center">
+              <a href=""> Registrarse </a>
+            </p>
+        </form>
+    </mat-card-content>
+</mat-card>
 
-<div class="LoginContainer">
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Usuario</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <mat-label>Clave</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <p>
-      <button> Ingresar</button>
-    </p>
-  </form>
-</div>
